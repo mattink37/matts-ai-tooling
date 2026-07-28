@@ -30,6 +30,48 @@ Install it: `/plugin install hello-world@matts-ai-tooling`
 
 Use it: `/hello-world:hello`
 
+## Shared Claude Rules
+
+This repo includes shared [Claude Code rules](https://code.claude.com/docs/en/claude-code-rules) that you
+can merge into your global `~/.claude/CLAUDE.md`. The installer script wraps each
+rule in delimited markers so re-running it updates rules in place — your own
+custom rules are left untouched.
+
+```
+./install-rules.sh
+```
+
+Or to preview without writing:
+
+```
+./install-rules.sh --dry-run
+```
+
+The script works on **macOS**, **Linux**, and **Windows** (Git Bash / WSL).
+
+### How it works
+
+Each `.md` file in [`rules/`](rules/) becomes a section in your global
+`~/.claude/CLAUDE.md`, wrapped in markers:
+
+```markdown
+<!-- BEGIN_SHARED_RULES:matts-ai-tooling:code-style -->
+... rule content ...
+<!-- END_SHARED_RULES:matts-ai-tooling:code-style -->
+```
+
+- **Re-run safely** — rules are updated in place, never duplicated
+- **Add your own** — content outside the markers is preserved
+- **Remove a rule** — delete the `.md` file from `rules/` and re-run; the
+  section is stripped from your CLAUDE.md
+
+### Current rules
+
+| Rule | Description |
+|------|-------------|
+| `code-style` | General code style and readability conventions |
+| `commit-conventions` | Git commit message standards |
+
 ## Adding a Plugin to This Marketplace
 
 ### Option 1: Add a plugin in this repo (simplest)
