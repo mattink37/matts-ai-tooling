@@ -15,6 +15,16 @@
       "author": {
         "name": "Matt Inkeles"
       }
+    },
+    {
+      "name": "ste-writing",
+      "source": "./plugins/ste-writing",
+      "description": "Rewrite prose into ASD-STE100 Simplified Technical English — removes AI-slop from docs, READMEs, PR descriptions, error messages, release notes, and comments",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ege Çelebi"
+      },
+      "license": "MIT"
     }
   ]
 }

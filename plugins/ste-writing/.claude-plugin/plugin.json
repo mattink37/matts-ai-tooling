@@ -1,0 +1,11 @@
+{
+  "name": "ste-writing",
+  "description": "Rewrite prose into ASD-STE100 Simplified Technical English to remove AI-slop from docs, READMEs, PRs, error messages, and comments",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ege Çelebi",
+    "url": "https://github.com/egecel"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/mattink37/matts-ai-tooling"
+}
