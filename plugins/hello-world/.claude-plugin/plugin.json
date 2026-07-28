@@ -1,0 +1,8 @@
+{
+  "name": "hello-world",
+  "description": "A simple hello-world skill to verify the marketplace setup works",
+  "version": "1.0.0",
+  "author": {
+    "name": "Matt Inkeles"
+  }
+}

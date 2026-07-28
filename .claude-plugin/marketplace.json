@@ -1,0 +1,20 @@
+{
+  "name": "matts-ai-tooling",
+  "owner": {
+    "name": "Matt Inkeles",
+    "url": "https://github.com/mattink37"
+  },
+  "description": "Matt's personal Claude Code plugin marketplace — skills, agents, hooks, and MCP servers for AI-assisted development.",
+  "version": "1.0.0",
+  "plugins": [
+    {
+      "name": "hello-world",
+      "source": "./plugins/hello-world",
+      "description": "A simple hello-world skill to verify the marketplace setup works",
+      "version": "1.0.0",
+      "author": {
+        "name": "Matt Inkeles"
+      }
+    }
+  ]
+}
